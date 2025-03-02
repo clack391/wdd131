@@ -235,16 +235,3 @@ h3 {
     transform: translateY(-5px); /* Add subtle hover effect */
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
-
-.flag-img {
-    position: relative;
-    top: -50px; /* Adjust this value to control upward movement */
-    margin-bottom: -15px; /* Compensate for the layout shift */
-    transition: all 0.3s ease;
-    z-index: 1; /* Ensure proper layering */
-}
-
-.flag-img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
