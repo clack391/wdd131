@@ -88,10 +88,17 @@ h2 {
     border: 2px solid #2c3e50;
     color: white;
     padding: 15px 0;
-    margin: 0 -1.5rem; /* Counteract card padding */
-    width: calc(100% + 3rem); /* Expand beyond card padding */
+    margin: 0 calc(-50vw + 50%);
+    width: 100vw;
     box-sizing: border-box;
     position: relative;
-    left: -1.5rem;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
     border-radius: 5px 5px 0 0;
+}
+
+/* Prevent horizontal overflow */
+body {
+    overflow-x: hidden;
 }
