@@ -226,7 +226,7 @@ h3 {
 
 .profile-img {
     position: relative;
-    top: -100px; /* Adjust this value to control how much it moves up */
+    top: -200px; /* Adjust this value to control how much it moves up */
     margin-bottom: -20px; /* Compensate for the upward movement */
     transition: all 0.3s ease;
 }
