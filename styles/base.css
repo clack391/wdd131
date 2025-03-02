@@ -108,3 +108,69 @@ h3 {
     box-sizing: border-box; 
     }
     
+    /* Web Dev Resources Card Enhancements */
+.card.resources { /* Add class="resources" to the resources card section */
+    position: relative;
+}
+
+.resources .content {
+    padding: 1.5rem 2rem;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.resources li {
+    position: relative;
+    padding-left: 2rem;
+    transition: transform 0.2s ease;
+}
+
+.resources li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.resources a {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: block;
+    padding: 0.8rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.resources a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transform: translateX(5px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.resources a:hover::after {
+    content: "↗";
+    margin-left: 0.5rem;
+    display: inline-block;
+}
+
+/* Optional: Add Font Awesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+.resources li::before {
+    content: "\f121"; /* Font Awesome code icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 50%;
+    transform: translateY(-50%);
+}
