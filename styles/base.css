@@ -81,3 +81,13 @@ h3 {
     color: var(--secondary-color);
     margin: 1rem 0 0.5rem;
 }
+
+h2 {
+    text-align: center;
+    background-color: #3498db; /* Blue background */
+    border: 2px solid #2c3e50; /* Dark blue border */
+    padding: 10px 15px; /* Internal spacing */
+    color: white; /* Text color */
+    margin: 1rem 0; /* External spacing */
+    border-radius: 5px; /* Optional rounded corners */
+}
