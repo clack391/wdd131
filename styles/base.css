@@ -223,21 +223,6 @@ h3 {
     color: #666;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-me .content {
-        grid-template-columns: 1fr;
-    }
-    
-    .about-me img {
-        max-width: 300px;
-        margin: 0 auto;
-    }
-    
-    .about-me .text-content {
-        order: initial;
-    }
-}
 
 .profile-img {
     position: relative;
