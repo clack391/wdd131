@@ -238,7 +238,7 @@ h3 {
 
 .flag-img {
     position: relative;
-    top: -15px; /* Adjust this value to control upward movement */
+    top: -50px; /* Adjust this value to control upward movement */
     margin-bottom: -15px; /* Compensate for the layout shift */
     transition: all 0.3s ease;
     z-index: 1; /* Ensure proper layering */
