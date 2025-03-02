@@ -84,21 +84,12 @@ h3 {
 
 h2 {
     text-align: center;
-    background-color: #3498db;
-    border: 2px solid #2c3e50;
+    background-color: var(--primary-color);
+    padding: 10px 15px;
     color: white;
-    padding: 15px 0;
-    margin: 0 calc(-50vw + 50%);
-    width: 100vw;
-    box-sizing: border-box;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-    border-radius: 5px 5px 0 0;
-}
-
-/* Prevent horizontal overflow */
-body {
-    overflow-x: hidden;
-}
+    border-radius: 5px;
+    width: 100%; /* Make it full width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    display: block;
+    text-align: center;
+    }
