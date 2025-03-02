@@ -93,6 +93,13 @@ footer {
 }
 
 h3 {
-    color: var(--secondary-color);
-    margin: 1rem 0 0.5rem;
-}
+    background-color: var(--secondary-color); /* Background color */
+    color: white; /* Text color */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    margin: 1rem 0 0.5rem; /* Keep spacing */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Consistent sizing */
+    }
+    
