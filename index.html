@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2c3e50">
     <title>WDD 131 – Dynamic Web Fundamentals - Precious Onotu</title>
     <meta name="description" content="WDD 131 course home page for Precious Onotu, showcasing web development skills and projects. Keywords: web development, HTML, CSS, JavaScript">
     <meta name="author" content="Precious Onotu">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Open+Sans&display=swap" rel="stylesheet">
@@ -15,12 +17,14 @@
 <body>
     <header>
         <h1>WDD 131: Dynamic Web Fundamentals</h1>
-        <nav>
+        <nav aria-label="Primary navigation">
             <ul>
-                <li><a href="https://www.linkedin.com/in/precious-onotu-aba9b6312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
+                <li><a href="https://www.linkedin.com/in/precious-onotu-aba9b6312" 
+                       target="_blank" 
+                       rel="noopener noreferrer">LinkedIn</a></li>
                 <li><a href="https://byupw.instructure.com/">Canvas</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
-                <li><a href="#">Final Project</a></li>
+                <li><a href="final-project/">Final Project</a></li>
             </ul>
         </nav>
     </header>
@@ -29,13 +33,21 @@
             <h2>About Me</h2>
             <div class="content">
                 <div class="image-group">
-                    <img src="images/profile.jpg" alt="Precious Onotu" class="profile-img">
+                    <img src="images/profile-optimized.jpg" 
+                         alt="Precious Onotu portrait" 
+                         class="profile-img"
+                         width="250"
+                         height="250">
                 </div>
                 <div class="text-content">
                     <p>Hi! My name is Precious Onotu from Delta State, Nigeria. I enjoy web development and outdoor activities. I'm excited to learn more about dynamic web fundamentals in this course.</p>
                     <div class="location-info">
                         <div class="location-header">
-                            <img src="images/nigeria.jpg" alt="Nigeria Flag" class="flag-img">
+                            <img src="images/nigeria-optimized.jpg" 
+                                 alt="Nigerian flag" 
+                                 class="flag-img"
+                                 width="60"
+                                 height="40">
                             <h3>Delta State, Nigeria</h3>
                         </div>
                         <p>Nigeria is Africa's most populous country and largest economy. Known for its cultural diversity, vibrant music scene, and Nollywood film industry.</p>
