@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Update footer year
+ 
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Update last modified date
-    document.getElementById("lastModified").textContent = document.lastModified;
+  
+    document.getElementById("lastModified").textContent = new Date(document.lastModified).toLocaleString();
 
-    // Hamburger menu functionality
+
     const menuButton = document.getElementById("menu-button");
     const navMenu = document.getElementById("nav-menu");
 
     menuButton.addEventListener("click", () => {
         if (navMenu.style.display === "flex") {
             navMenu.style.display = "none";
-            menuButton.innerHTML = "&#9776;"; // Hamburger icon
+            menuButton.innerHTML = "&#9776;";
         } else {
             navMenu.style.display = "flex";
-            menuButton.innerHTML = "&#10006;"; // 'X' close icon
+            menuButton.innerHTML = "&#10006;"; //
         }
     });
 });
