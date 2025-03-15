@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-button" type="button">&#9776;</button>
+        <nav id="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <section class="gallery">
+            <figure>
+                <img src="images/temple1.jpg" alt="Temple 1">
+                <figcaption>Nature</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Temple 2">
+                <figcaption>Nature</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple3.jpg" alt="Temple 3">
+                <figcaption>Nature</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple4.jpg" alt="Temple 4">
+                <figcaption>Nature</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple5.jpg" alt="Temple 5">
+                <figcaption>Nature</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple6.jpg" alt="Temple 6">
+                <figcaption>Nature</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple7.jpg" alt="Temple 7">
+                <figcaption>Nature</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple8.jpg" alt="Temple 8">
+                <figcaption>Nature</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple9.jpg" alt="Temple 9">
+                <figcaption>Nature</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Precious Onotu - Nigeria</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
