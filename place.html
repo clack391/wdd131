@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Nigeria</title>
+    <meta name="description" content="Discover the beauty of Nigeria - diverse cultures, landscapes, and vibrant cities">
+    <meta name="author" content="Precious Onotu">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="scripts/styles.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/nigeria-hero-800.webp" media="(min-width: 600px)">
+                <img src="images/nigeria-hero-400.webp" alt="Nigerian landscape" loading="lazy">
+            </picture>
+        </section>
+
+        <div class="layout">
+            <section class="data">
+                <h2>Country Facts</h2>
+                <ul>
+                    <li>Population: 206 million</li>
+                    <li>Capital: Abuja</li>
+                    <li>Official Language: English</li>
+                    <li>Currency: Nigerian Naira (NGN)</li>
+                </ul>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+                <div class="weather-info">
+                    <svg class="mobile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path fill="currentColor" d="M17 7a8.003 8.003 0 0 0-7.493 5.19l1.874.703A6.002 6.002 0 0 1 23 15a6 6 0 0 1-6 6H7A6 6 0 0 1 5.008 9.339a7 7 0 0 1 13.757-2.143L17 7z"/>
+                    </svg>
+                    <p>Current temp: <span id="temp">5</span>°C</p>
+                    <p>Wind Speed: <span id="wind">10</span> km/h</p>
+                    <p>Wind Chill: <span id="chill">N/A</span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Precious Onotu - Nigeria</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
