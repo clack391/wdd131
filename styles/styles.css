@@ -5,7 +5,6 @@
     --spacing-unit: 1rem;
   }
   
-  /* Global resets and base styles */
   * {
     margin: 0;
     padding: 0;
@@ -53,16 +52,13 @@
     position: relative;
   }
   
-  /* Weather info grouping */
   .weather-info {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
-  
-  /* Mobile icon styles */
-  /* By default, display the SVG icon for mobile */
-  .mobile-icon {
+
+.mobile-icon {
     display: block;
     width: 50px;
     height: 50px;
@@ -70,7 +66,6 @@
     color: var(--primary-color);
   }
   
-  /* Footer styling */
   footer {
     background-color: var(--primary-color);
     color: var(--accent-color);
@@ -79,18 +74,15 @@
     margin-top: auto;
   }
   
-  /* Responsive adjustments */
   @media (min-width: 600px) {
     .layout {
       grid-template-columns: 1fr 1fr;
     }
     
-    /* Hide the mobile SVG icon on wider views */
     .mobile-icon {
       display: none;
     }
     
-    /* Display the pseudo-element emoticon on desktop only */
     .weather::after {
       content: "⛅";
       position: absolute;
@@ -101,7 +93,6 @@
     }
   }
   
-  /* Optionally, hide the pseudo-element on mobile if needed */
   @media (max-width: 599px) {
     .weather::after {
       display: none;
