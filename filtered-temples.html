@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album - Precious Onotu</title>
+    <meta name="description" content="Filtered temple album showcasing temple data with filtering functionality.">
+    <meta name="author" content="Precious Onotu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Filtered Temple Album</h1>
+    <nav id="filter-nav" aria-label="Temple filters">
+      <button type="button" data-filter="all" aria-pressed="true">Home</button>
+      <button type="button" data-filter="old">Old</button>
+      <button type="button" data-filter="new">New</button>
+      <button type="button" data-filter="large">Large</button>
+      <button type="button" data-filter="small">Small</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="temple-gallery" id="templeGallery" aria-live="polite">
+      <!-- Temple cards will be dynamically generated here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Precious Onotu - Nigeria</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
