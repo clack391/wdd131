@@ -15,20 +15,20 @@
 <body>
   <header>
     <h1>Filtered Temple Album</h1>
-    <!-- Filter Navigation using <a> elements -->
+    <!-- Filter Navigation using 5 anchor elements -->
     <nav id="filter-nav" aria-label="Temple filters">
-      <a href="#" data-filter="all" aria-pressed="true">Home</a>
-      <a href="#" data-filter="old">Old</a>
-      <a href="#" data-filter="new">New</a>
-      <a href="#" data-filter="large">Large</a>
-      <a href="#" data-filter="small">Small</a>
+      <a href="#" role="button" data-filter="all" aria-pressed="true">Home</a>
+      <a href="#" role="button" data-filter="old" aria-pressed="false">Old</a>
+      <a href="#" role="button" data-filter="new" aria-pressed="false">New</a>
+      <a href="#" role="button" data-filter="large" aria-pressed="false">Large</a>
+      <a href="#" role="button" data-filter="small" aria-pressed="false">Small</a>
     </nav>
   </header>
 
   <main>
     <section class="temple-gallery" id="templeGallery" aria-live="polite">
       <h2>Temple Gallery</h2>
-      <!-- Temple items will be dynamically inserted here -->
+      <!-- Temple items go here -->
     </section>
   </main>
 
