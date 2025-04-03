@@ -2,213 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PetPaws Rescue - Find Your New Best Friend</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUR &amp; FEATHER ADOPTIONS - Site Plan</title>
   <link rel="stylesheet" href="styles/siteplan.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <!-- Announcement Bar -->
-  <section class="announcement" aria-label="Announcement">
-    <p>🐾 Save a life - Adopt today! Weekend adoption event every Saturday 10AM-2PM</p>
-  </section>
-
-  <!-- Header -->
-  <header class="main-header">
-    <div class="header-container">
-      <a href="/" class="logo">
-        <img src="images/logo.png" alt="PetPaws Rescue Logo">
-        <span>PetPaws Rescue</span>
-      </a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
-      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
-        <span></span>
-      </label>
-      <nav class="main-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#adoption-profiles">Adoption</a></li>
-          <li><a href="#success-stories">Stories</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#volunteer">Volunteer</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Fur &amp; Feather Logo" class="logo">
     </div>
+    <h1>FUR &amp; FEATHER ADOPTIONS</h1>
+    <p>Your Local Pet Adoption &amp; Animal Rescue Center</p>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero" id="home" aria-label="Hero section">
-      <div class="hero-content">
-        <h1>Find Your Forever Friend</h1>
-        <p>Connecting loving homes with rescued pets in need</p>
-        <div class="hero-cta">
-          <a href="#adoption-profiles" class="btn primary">Meet Our Pets</a>
-          <a href="#volunteer" class="btn secondary">Get Involved</a>
-        </div>
-      </div>
+    <!-- Introduction / Site Name & Purpose -->
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p><strong>FUR &amp; FEATHER ADOPTIONS</strong></p>
+      <ul>
+        <li>The name clearly communicates the mission of connecting pets with loving homes.</li>
+        <li>Optional domain availability: <em>furfeatheradoptions.com</em> (example)</li>
+      </ul>
     </section>
 
-    <!-- Adoption Profiles -->
-    <section class="featured-pets" id="adoption-profiles" aria-label="Adoption profiles">
-      <div class="section-container">
-        <h2>Adoption Profiles</h2>
-        <p>Explore detailed profiles of our rescued pets ready to join your family.</p>
-        <div class="grid">
-          <article class="pet-card">
-            <div class="pet-image">
-              <img src="images/dog1.webp" alt="Buddy the Labrador mix playing fetch">
-              <span class="pet-status">Available</span>
-            </div>
-            <div class="pet-info">
-              <h3>Buddy</h3>
-              <div class="pet-meta">
-                <span><i class="fas fa-paw"></i> Labrador Mix</span>
-                <span><i class="fas fa-venus-mars"></i> Male</span>
-                <span><i class="fas fa-birthday-cake"></i> 2 years</span>
-              </div>
-              <p>Friendly and energetic companion who loves outdoor adventures and cuddles.</p>
-              <a href="#view-buddy" class="btn small">View Profile →</a>
-            </div>
-          </article>
-
-          <article class="pet-card">
-            <div class="pet-image">
-              <img src="images/cat1.webp" alt="Whiskers the tabby cat sitting">
-              <span class="pet-status">Available</span>
-            </div>
-            <div class="pet-info">
-              <h3>Whiskers</h3>
-              <div class="pet-meta">
-                <span><i class="fas fa-paw"></i> Tabby Cat</span>
-                <span><i class="fas fa-venus-mars"></i> Female</span>
-                <span><i class="fas fa-birthday-cake"></i> 1.5 years</span>
-              </div>
-              <p>Gentle and affectionate lap cat, perfect for a quiet home environment.</p>
-              <a href="#view-whiskers" class="btn small">View Profile →</a>
-            </div>
-          </article>
-        </div>
-      </div>
+    <section id="site-purpose">
+      <h2>Site Purpose</h2>
+      <p>The website will serve as a comprehensive resource for pet adoption and animal rescue, featuring:</p>
+      <ul>
+        <li><strong>Adoption Profiles:</strong> Detailed listings of available pets with photos, descriptions, and personality traits.</li>
+        <li><strong>Success Stories:</strong> Testimonials and narratives from families who have adopted, highlighting heartwarming journeys.</li>
+        <li><strong>Resources &amp; Tips:</strong> Articles and blog posts on pet care, training, and veterinary services for responsible pet ownership.</li>
+        <li><strong>Volunteer &amp; Donation Information:</strong> Information on volunteering opportunities, upcoming events, and ways to support the rescue center through donations.</li>
+        <li><strong>Interactive Features:</strong> A calendar of events, a contact form for inquiries, and a potential chat feature for immediate questions about the adoption process.</li>
+      </ul>
     </section>
 
-    <!-- Success Stories -->
-    <section class="success-stories" id="success-stories" aria-label="Success stories">
-      <div class="section-container">
-        <h2>Success Stories</h2>
-        <p>Read inspiring testimonials from families who found their best friend through PetPaws.</p>
-        <div class="grid">
-          <article class="story-card">
-            <h3>The Johnsons &amp; Buddy</h3>
-            <p>"Buddy brought endless joy to our family. His playful nature and loving eyes captured our hearts from day one!"</p>
-          </article>
-          <article class="story-card">
-            <h3>Emily &amp; Whiskers</h3>
-            <p>"Whiskers changed my life. I found a companion who keeps me company and fills my home with warmth."</p>
-          </article>
-        </div>
-      </div>
+    <section id="scenarios">
+      <h2>Scenarios (Target Audience Questions)</h2>
+      <ul>
+        <li><strong>"How do I start the adoption process?"</strong> → Answered in the Adoption Profiles section and contact form details.</li>
+        <li><strong>"What support is available after adopting a pet?"</strong> → Featured in the Resources &amp; Tips page with care guides and expert advice.</li>
+      </ul>
     </section>
 
-    <!-- Resources -->
-    <section class="resources" id="resources" aria-label="Resources">
-      <div class="section-container">
-        <h2>Resources &amp; Tips</h2>
-        <p>Stay informed with our articles on pet care, training, and responsible ownership.</p>
-        <div class="grid">
-          <article class="blog-card">
-            <h3>10 Tips for First-Time Pet Owners</h3>
-            <p>Essential steps to prepare for a new pet and ensure a smooth transition.</p>
-            <a href="#blog1" class="btn small">Read More →</a>
-          </article>
-          <article class="blog-card">
-            <h3>Keeping Your Pet Healthy</h3>
-            <p>Practical advice on nutrition, exercise, and preventive care.</p>
-            <a href="#blog2" class="btn small">Read More →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Volunteer -->
-    <section class="volunteer" id="volunteer" aria-label="Volunteer section">
-      <div class="section-container">
-        <h2>Volunteer &amp; Donate</h2>
-        <p>Your support makes a difference. Help us save more lives through donations or volunteering.</p>
-        <div class="volunteer-info">
-          <div class="volunteer-text">
-            <h3>Volunteer Opportunities</h3>
-            <p>Join our team and help with pet care, events, and administrative tasks.</p>
-            <a href="#volunteer-form" class="btn primary">Sign Up</a>
-          </div>
-          <div class="donate-text">
-            <h3>Donate Now</h3>
-            <p>Your contributions help cover veterinary care and shelter improvements.</p>
-            <a href="#donate" class="btn secondary">Donate</a>
+    <!-- Adoption Profiles Section -->
+    <section id="adoption-profiles">
+      <h2>Adoption Profiles</h2>
+      <div class="pet-profiles">
+        <div class="pet-card">
+          <img src="images/cat1.jpg" alt="Fluffy">
+          <div class="card-content">
+            <h3>Fluffy</h3>
+            <p><strong>Breed:</strong> Persian Cat</p>
+            <p><strong>Personality:</strong> Calm, affectionate, playful</p>
           </div>
         </div>
+        <div class="pet-card">
+          <img src="images/dog1.webp" alt="Buddy">
+          <div class="card-content">
+            <h3>Buddy</h3>
+            <p><strong>Breed:</strong> Golden Retriever</p>
+            <p><strong>Personality:</strong> Energetic, loyal, friendly</p>
+          </div>
+        </div>
+        <!-- Additional pet cards can be added here -->
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="interactive" id="contact" aria-label="Contact section">
-      <div class="section-container">
-        <h2>Get In Touch</h2>
-        <p>Have questions about adoption? Contact us or visit our weekend events.</p>
-        <div class="contact-grid">
-          <div class="calendar">
-            <h3>Upcoming Events</h3>
-            <div class="event-list">
-              <p>📅 Every Saturday: Adoption Fair (10AM-2PM)</p>
-              <p>📅 June 15: Pet First Aid Workshop</p>
-              <p>📅 July 4: Independence Day Fundraiser</p>
-            </div>
-          </div>
-          <div class="contact-form">
-            <h3>Contact Us</h3>
-            <form>
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-              <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-              <button type="submit" class="btn primary">Send Message</button>
-            </form>
-          </div>
+    <!-- Success Stories Section -->
+    <section id="success-stories">
+      <h2>Success Stories</h2>
+      <article class="story">
+        <h3>The Johnson Family's Journey</h3>
+        <p>After adopting Bella, their lives changed for the better with a loving new member in the family.</p>
+      </article>
+      <article class="story">
+        <h3>A New Beginning for Max</h3>
+        <p>Max, a rescued dog, found a forever home with the Smiths, transforming his life and theirs.</p>
+      </article>
+    </section>
+
+    <!-- Resources & Tips Section -->
+    <section id="resources-tips">
+      <h2>Resources &amp; Tips</h2>
+      <ul>
+        <li><a href="#">Caring for Your New Pet: Essential Tips</a></li>
+        <li><a href="#">Training Techniques for a Happy Home</a></li>
+        <li><a href="#">Veterinary Care: What You Need to Know</a></li>
+        <li><a href="#">Understanding Pet Nutrition</a></li>
+      </ul>
+    </section>
+
+    <!-- Volunteer & Donation Information Section -->
+    <section id="volunteer-donation">
+      <h2>Volunteer &amp; Donation Information</h2>
+      <p>Join our community to make a difference:</p>
+      <ul>
+        <li><strong>Volunteer Opportunities:</strong> Help with animal care, event organization, and community outreach.</li>
+        <li><strong>Upcoming Events:</strong> Adoption drives, fundraising events, and community meet-ups.</li>
+        <li><strong>Donations:</strong> Support us through monetary donations, supplies, or sponsorships.</li>
+      </ul>
+    </section>
+
+    <!-- Interactive Features Section -->
+    <section id="interactive-features">
+      <h2>Interactive Features</h2>
+      <div class="interactive-container">
+        <div class="calendar">
+          <h3>Upcoming Events</h3>
+          <ul>
+            <li>Adoption Day: June 15, 2025</li>
+            <li>Fundraising Gala: July 22, 2025</li>
+            <li>Community Meetup: August 10, 2025</li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h3>Contact Us</h3>
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wireframe Sketches Section -->
+    <section id="wireframe">
+      <h2>Wireframe Sketches</h2>
+      <div class="wireframe-container">
+        <div class="wireframe">
+          <h3>Mobile View</h3>
+          <img src="images/wireframe-phone.jpg" alt="Mobile Wireframe" class="wireframe-img">
+        </div>
+        <div class="wireframe">
+          <h3>Desktop View</h3>
+          <img src="images/wireframe-pc.jpg" alt="Desktop Wireframe" class="wireframe-img">
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="footer-container">
-      <div class="footer-section about">
-        <h4>About PetPaws</h4>
-        <p>Connecting rescued pets with loving homes in Rexburg. Committed to animal welfare and community service.</p>
-      </div>
-      <div class="footer-section contact">
-        <h4>Contact</h4>
-        <p>123 Animal Lane<br>Rexburg, ID 83440</p>
-        <div class="social-links">
-          <a href="#facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="#instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        </div>
-      </div>
-      <div class="footer-section newsletter">
-        <h4>Newsletter</h4>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Enter your email" required>
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2023 PetPaws Rescue. All rights reserved</p>
-    </div>
+  <footer>
+    <p>&copy; 2025 Fur &amp; Feather Adoptions. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
