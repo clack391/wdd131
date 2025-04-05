@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+  <main>
+    <form id="reviewForm" method="get" action="review.html">
+      <!-- Product Name Select -->
+      <div class="form-group">
+        <label for="productName">
+          Product Name <span class="required">*</span>
+        </label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+          <!-- Options populated dynamically -->
+        </select>
+      </div>
+
+      <!-- Overall Rating Radio Buttons -->
+      <fieldset class="form-group">
+        <legend>
+          Overall Rating <span class="required">*</span>
+        </legend>
+        <label>
+          <input type="radio" id="rating1" name="rating" value="1" required> ☆
+        </label>
+        <label>
+          <input type="radio" id="rating2" name="rating" value="2"> ☆☆
+        </label>
+        <label>
+          <input type="radio" id="rating3" name="rating" value="3"> ☆☆☆
+        </label>
+        <label>
+          <input type="radio" id="rating4" name="rating" value="4"> ☆☆☆☆
+        </label>
+        <label>
+          <input type="radio" id="rating5" name="rating" value="5"> ☆☆☆☆☆
+        </label>
+      </fieldset>
+
+      <!-- Date of Installation -->
+      <div class="form-group">
+        <label for="installDate">
+          Date of Installation <span class="required">*</span>
+        </label>
+        <input type="date" id="installDate" name="installDate" required>
+      </div>
+
+      <!-- Useful Features (Checkboxes) -->
+      <fieldset class="form-group">
+        <legend>Useful Features:</legend>
+        <label>
+          <input type="checkbox" id="feature1" name="features[]" value="feature1"> Durability
+        </label>
+        <label>
+          <input type="checkbox" id="feature2" name="features[]" value="feature2"> Design
+        </label>
+        <label>
+          <input type="checkbox" id="feature3" name="features[]" value="feature3"> Performance
+        </label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <div class="form-group">
+        <label for="reviewText">Written Review:</label>
+        <textarea id="reviewText" name="reviewText" rows="5" cols="30"></textarea>
+      </div>
+
+      <!-- User Name -->
+      <div class="form-group">
+        <label for="userName">Your Name:</label>
+        <input type="text" id="userName" name="userName">
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit">Submit Review</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Precious Onotu - Nigeria</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+  <script src="scripts/script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
+</script>
+</body>
+</html>

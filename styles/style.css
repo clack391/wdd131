@@ -1,0 +1,76 @@
+/* Reset and basic typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  header, footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e3e3e3;
+    margin-bottom: 20px;
+  }
+  
+  /* Main container styling */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  /* Form groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Indicate required fields */
+  .required {
+    color: #d00;
+  }
+  
+  /* Input styling */
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Button styling */
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #306ac1;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  }
+  

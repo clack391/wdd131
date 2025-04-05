@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Confirmation</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+  <main>
+    <p>Your review has been submitted successfully.</p>
+    <p>Total reviews submitted: <span id="reviewCount"></span></p>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Precious Onotu - Nigeria</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+  <script>
+    // Retrieve and update the review count in localStorage
+    let count = localStorage.getItem('reviewCount') || 0;
+    count = Number(count) + 1;
+    localStorage.setItem('reviewCount', count);
+    document.getElementById('reviewCount').textContent = count;
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+</body>
+</html>
