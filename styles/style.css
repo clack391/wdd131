@@ -9,8 +9,8 @@
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 20px;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: #000009;
+    color: #000000;
   }
   
   header, footer {
@@ -40,7 +40,7 @@
   
   /* Indicate required fields */
   .required {
-    color: #d00;
+    color: #8A0000;
   }
   
   /* Input styling */
