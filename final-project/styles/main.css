@@ -1,0 +1,502 @@
+/* Global Styles */
+:root {
+    --primary-color: #2b6d4a;
+    --secondary-color: #4e8d71;
+    --accent-color: #f9a826;
+    --text-color: #333;
+    --light-bg: #f5f5f5;
+    --dark-bg: #333;
+    --white: #ffffff;
+    --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --rounded: 8px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main {
+    min-height: 70vh;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+#primary-nav {
+    display: flex;
+    list-style: none;
+}
+
+#primary-nav li {
+    margin-left: 1.5rem;
+}
+
+#primary-nav a {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 0.5rem;
+    border-bottom: 2px solid transparent;
+}
+
+#primary-nav a:hover, 
+#primary-nav a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Page Header */
+.page-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #e8f4ee;
+    margin-bottom: 2rem;
+}
+
+.page-header p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+.cta-button, 
+.secondary-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--rounded);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    font-size: 1rem;
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.cta-button:hover {
+    background-color: #e09010;
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.secondary-button:hover {
+    background-color: #e8f4ee;
+    transform: translateY(-2px);
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: var(--rounded);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(43, 109, 74, 0.2);
+}
+
+.checkbox-group,
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.checkbox-group input,
+.radio-group input {
+    margin-right: 0.5rem;
+}
+
+.checkbox-group label,
+.radio-group label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.required {
+    color: #d9534f;
+}
+
+.form-hint {
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: var(--rounded);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo, 
+.footer-links, 
+.footer-contact {
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-links h4, 
+.footer-contact h4 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #ccc;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+.footer-contact p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #menu-button {
+        display: block;
+    }
+
+    #primary-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: var(--white);
+        box-shadow: var(--shadow);
+        padding: 1rem;
+    }
+
+    #primary-nav.show {
+        display: flex;
+    }
+
+    #primary-nav li {
+        margin: 0.5rem 0;
+        margin-left: 0; /* Reset the left margin for mobile view */
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-logo, 
+    .footer-links, 
+    .footer-contact {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Trail Cards (shared between pages) */
+.trail-cards, 
+.trails-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.trail-card {
+    background-color: var(--white);
+    border-radius: var(--rounded);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.trail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.trail-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trail-info {
+    padding: 1.5rem;
+}
+
+.trail-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.difficulty {
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.difficulty.easy {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.difficulty.moderate {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.difficulty.difficult {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.favorite-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--rounded);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.favorite-button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.favorite-button.favorited {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Fix for lazy-loading images */
+.lazy-image {
+    transition: opacity 0.3s ease;
+}
+
+/* CSS for Focus states to improve accessibility */
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Fix for newsletter section in index.html */
+.newsletter form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+@media (max-width: 500px) {
+    .trail-cards, 
+    .trails-grid {
+        grid-template-columns: 1fr;
+    }
+}
