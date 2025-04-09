@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover beautiful mountain hiking trails perfect for all experience levels. Plan your next adventure with our trail guides and hiking resources.">
-    <title>Mountain Trails | Home</title>
+    <meta name="description" content="Fur and Adoptions is a local pet adoption and rescue center dedicated to finding loving homes for animals in need.">
+    <title>Fur and Adoptions | Pet Adoption Center</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <script src="scripts/lazy-loading.js" defer></script>
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/favorites.js" defer></script>
+    <script src="scripts/app.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="images/logo.png" alt="Mountain Trails Logo" class="logo">
-            <h1>Mountain Trails</h1>
+            <img src="images/logo.png" alt="Fur and Adoptions Logo" width="80" height="80">
+            <h1>Fur and Adoptions</h1>
         </div>
         <nav>
-            <button id="menu-button" type="button" aria-label="Main Menu">&#9776;</button>
-            <ul id="primary-nav">
+            <button id="hamburger-menu" type="button" aria-label="Toggle navigation menu">☰</button>
+            <ul id="nav-menu">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="trails.html">Trails</a></li>
-                <li><a href="gear.html">Hiking Gear</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pets.html">Available Pets</a></li>
+                <li><a href="stories.html">Success Stories</a></li>
             </ul>
         </nav>
     </header>
@@ -31,130 +27,125 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h2>Discover Nature's Hidden Paths</h2>
-                <p>Explore breathtaking mountain trails curated for hikers of all experience levels</p>
-                <a href="trails.html" class="cta-button">Explore Trails</a>
+                <h2>Find Your Forever Friend</h2>
+                <p>Every pet deserves a loving home. We connect animals in need with caring families.</p>
+                <a href="pets.html" class="cta-button">Meet Our Pets</a>
             </div>
         </section>
 
-        <section class="featured-trails">
-            <h2>Featured Trails</h2>
-            <div class="trail-cards">
-                <article class="trail-card">
-                    <img src="images/trail1-small.jpeg" data-src="images/trail1.jpeg" alt="Alpine Ridge Trail" class="lazy-image">
-                    <div class="trail-info">
-                        <h3>Alpine Ridge Trail</h3>
-                        <p class="trail-details">
-                            <span class="difficulty moderate">Moderate</span>
-                            <span class="length">5.4 miles</span>
-                            <span class="elevation">1,200 ft</span>
-                        </p>
-                        <p>A stunning ridge trail offering panoramic views of alpine meadows and distant peaks.</p>
-                        <button class="favorite-button" data-trail-id="trail1" type="button">Add to Favorites</button>
+        <section class="featured-pets">
+            <h2>Featured Pets</h2>
+            <p>These lovable companions are waiting to meet you!</p>
+            <div class="pet-cards">
+                <article class="pet-card">
+                    <img src="images/dog1.jpeg" alt="Buddy - Golden Retriever" loading="lazy" 
+                         data-src="images/dog1.jpeg" class="lazy-image">
+                    <div class="pet-info">
+                        <h3>Buddy</h3>
+                        <p>Golden Retriever • 3 years old</p>
+                        <p>Friendly and energetic companion who loves long walks</p>
+                        <button class="favorite-btn" data-id="pet1" type="button">♡ Favorite</button>
                     </div>
                 </article>
-                <article class="trail-card">
-                    <img src="images/trail2-small.jpeg" data-src="images/trail2.jpeg" alt="Emerald Lake Loop" class="lazy-image">
-                    <div class="trail-info">
-                        <h3>Emerald Lake Loop</h3>
-                        <p class="trail-details">
-                            <span class="difficulty easy">Easy</span>
-                            <span class="length">3.2 miles</span>
-                            <span class="elevation">400 ft</span>
-                        </p>
-                        <p>A family-friendly hike around a crystal-clear mountain lake with abundant wildlife.</p>
-                        <button class="favorite-button" data-trail-id="trail2" type="button">Add to Favorites</button>
+                <article class="pet-card">
+                    <img src="images/cat1.jpeg" alt="Luna - Domestic Shorthair" loading="lazy"
+                         data-src="images/cat1.jpeg" class="lazy-image">
+                    <div class="pet-info">
+                        <h3>Luna</h3>
+                        <p>Domestic Shorthair • 2 years old</p>
+                        <p>Sweet and gentle cat who enjoys quiet cuddle time</p>
+                        <button class="favorite-btn" data-id="pet2" type="button">♡ Favorite</button>
                     </div>
                 </article>
-                <article class="trail-card">
-                    <img src="images/trail3-small.jpeg" data-src="images/trail3.jpeg" alt="Summit Peak Trail" class="lazy-image">
-                    <div class="trail-info">
-                        <h3>Summit Peak Trail</h3>
-                        <p class="trail-details">
-                            <span class="difficulty difficult">Difficult</span>
-                            <span class="length">8.7 miles</span>
-                            <span class="elevation">3,200 ft</span>
-                        </p>
-                        <p>A challenging ascent to a breathtaking summit with 360-degree mountain views.</p>
-                        <button class="favorite-button" data-trail-id="trail3" type="button">Add to Favorites</button>
+                <article class="pet-card">
+                    <img src="images/dog2.jpeg" alt="Max - Border Collie Mix" loading="lazy"
+                         data-src="images/dog2.jpeg" class="lazy-image">
+                    <div class="pet-info">
+                        <h3>Max</h3>
+                        <p>Border Collie Mix • 1 year old</p>
+                        <p>Intelligent and playful pup looking for an active family</p>
+                        <button class="favorite-btn" data-id="pet3" type="button">♡ Favorite</button>
                     </div>
                 </article>
             </div>
-        </section>
-
-        <section class="about-section">
-            <div class="about-content">
-                <h2>About Mountain Trails</h2>
-                <p>We're passionate hikers dedicated to showcasing the most beautiful mountain trails across the country. Our curated selection includes trails for every experience level, from gentle family walks to challenging summit hikes.</p>
-                <p>Each trail in our collection has been personally hiked and documented by our team, ensuring accurate and helpful information for your outdoor adventures.</p>
-            </div>
-            <div class="about-image">
-                <img src="images/about-small.jpeg" data-src="images/about.jpeg" alt="Hikers on a mountain trail" class="lazy-image">
+            <div class="center-button">
+                <a href="pets.html" class="secondary-button">See All Pets</a>
             </div>
         </section>
 
-        <section class="favorite-trails">
-            <h2>Your Favorite Trails</h2>
-            <div id="favorites-container">
-                <p id="no-favorites-message">You haven't saved any favorite trails yet. Explore our <a href="trails.html">trails</a> and add some to your list!</p>
-                <ul id="favorites-list"></ul>
+        <section class="adoption-steps">
+            <h2>Adoption Process</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Browse</h3>
+                    <p>Explore our available pets and find your perfect match</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Meet</h3>
+                    <p>Schedule a visit to meet and interact with your potential pet</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Apply</h3>
+                    <p>Complete our adoption application and approval process</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Welcome Home</h3>
+                    <p>Bring your new family member to their forever home</p>
+                </div>
             </div>
-            <button id="clear-favorites" class="secondary-button" type="button">Clear All Favorites</button>
         </section>
 
-        <section class="newsletter">
-            <h2>Stay Updated</h2>
-            <p>Subscribe to our newsletter for seasonal trail updates, hiking tips, and exclusive guides.</p>
-            <form id="newsletter-form">
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Have questions about adoption? Fill out the form below and we'll get back to you soon!</p>
+            <form id="contact-form">
                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                    <span class="error-message" id="name-error"></span>
                 </div>
                 <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                    <span class="error-message" id="email-error"></span>
                 </div>
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="hiking-tips" name="interests" value="hiking-tips">
-                    <label for="hiking-tips">Hiking Tips</label>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required autocomplete="on"></textarea>
+                    <span class="error-message" id="message-error"></span>
                 </div>
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="trail-updates" name="interests1" value="trail-updates">
-                    <label for="trail-updates">Trail Updates</label>
-                </div>
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="gear-reviews" name="interests2" value="gear-reviews">
-                    <label for="gear-reviews">Gear Reviews</label>
-                </div>
-                <button type="submit" class="cta-button">Subscribe</button>
+                <button type="submit" class="cta-button">Send Message</button>
             </form>
+            <div id="form-success" class="hidden">Thank you for your message! We'll be in touch soon.</div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">
-                <img src="images/logo-small.png" alt="Mountain Trails Logo" class="footer-logo-img">
-                <h3>Mountain Trails</h3>
+            <div class="footer-section">
+                <h3>Fur and Adoptions</h3>
+                <p>123 Rescue Lane<br>Anytown, ST 12345<br>Phone: (555) 123-4567</p>
             </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 10am - 6pm<br>Saturday: 10am - 5pm<br>Sunday: 12pm - 4pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="trails.html">Trails</a></li>
-                    <li><a href="gear.html">Hiking Gear</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="pets.html">Available Pets</a></li>
+                    <li><a href="stories.html">Success Stories</a></li>
                     <li><a href="references.html">References</a></li>
                 </ul>
             </div>
-            <div class="footer-contact">
-                <h4>Contact Us</h4>
-                <p>Email: info@mountaintrails.com</p>
-                <p>Phone: (555) 123-4567</p>
-            </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Mountain Trails. All rights reserved.</p>
+        <div class="copyright">
+            <p>&copy; 2025 Fur and Adoptions | All Rights Reserved</p>
         </div>
     </footer>
 </body>

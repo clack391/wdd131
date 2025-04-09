@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read heartwarming success stories from families who have adopted pets from Fur and Adoptions.">
+    <title>Success Stories | Fur and Adoptions</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Fur and Adoptions Logo" width="80" height="80">
+            <h1>Fur and Adoptions</h1>
+        </div>
+        <nav>
+            <button id="hamburger-menu" type="button" aria-label="Toggle navigation menu">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html">Available Pets</a></li>
+                <li><a href="stories.html" class="active">Success Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Success Stories</h2>
+            <p>Heartwarming tales of pets finding their forever homes.</p>
+        </section>
+
+        <section class="success-stories">
+            <article class="story">
+                <div class="story-image">
+                    <img src="images/success1.jpeg" alt="Charlie with his new family" 
+                         data-src="images/success1.jpeg" class="lazy-image">
+                </div>
+                <div class="story-content">
+                    <h3>Charlie's New Beginning</h3>
+                    <p class="story-meta">Adopted: January 2025 • Family: The Martinez Family</p>
+                    <div class="story-text">
+                        <p>Charlie, a 4-year-old Labrador mix, spent over a year at our shelter after being rescued from an abandoned property. Despite his difficult past, Charlie remained gentle and loving.</p>
+                        <p>The Martinez family visited our shelter looking for a companion for their 10-year-old son, Miguel, who had been asking for a dog for years. When Miguel met Charlie, it was an instant connection. Charlie now enjoys daily walks in the park, playing fetch, and curling up next to Miguel during homework time.</p>
+                        <p class="quote">"Charlie has brought so much joy to our home. He's patient with Miguel and has become such an important part of our family." - The Martinez Family</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="story">
+                <div class="story-image">
+                    <img src="images/success2.jpeg" alt="Bella in her new home" 
+                         data-src="images/success2.jpeg" class="lazy-image">
+                </div>
+                <div class="story-content">
+                    <h3>Bella's Second Chance</h3>
+                    <p class="story-meta">Adopted: March 2025 • Family: Sarah Johnson</p>
+                    <div class="story-text">
+                        <p>Bella, a shy 3-year-old calico cat, came to us when her previous owner could no longer care for her. She was timid and would hide whenever visitors came to the shelter.</p>
+                        <p>Sarah, who works from home, was looking for a quiet companion. Sarah patiently visited Bella multiple times, slowly earning her trust. Now, Bella has blossomed in her new environment, becoming playful and affectionate.</p>
+                        <p class="quote">"Bella sits on my desk while I work and greets me at the door when I come home. Adopting her was the best decision I've made. She's completely transformed from the shy cat I first met." - Sarah</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="story">
+                <div class="story-image">
+                    <img src="images/success3.jpeg" alt="Max and his new owner hiking" 
+                         data-src="images/success3.jpeg" class="lazy-image">
+                </div>
+                <div class="story-content">
+                    <h3>Max's Adventure Buddy</h3>
+                    <p class="story-meta">Adopted: February 2025 • Family: James Wilson</p>
+                    <div class="story-text">
+                        <p>Max, an energetic Border Collie mix, needed a home that could match his enthusiasm and activity level. He had boundless energy that made him a challenging fit for many families.</p>
+                        <p>James, an avid hiker and outdoor enthusiast, was looking for a companion for his adventures. When he met Max, he knew they would be perfect for each other. Now, Max joins James on hiking trails, camping trips, and even kayaking adventures.</p>
+                        <p class="quote">"Max has the perfect energy level for my lifestyle. He's the best hiking partner I could ask for, and he's taught me to appreciate the simple joy of exploring." - James</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="share-story">
+            <h3>Share Your Success Story</h3>
+            <p>Did you adopt a pet from Fur and Adoptions? We'd love to hear how your new family member is doing!</p>
+            <form id="story-form">
+                <div class="form-group">
+                    <label for="story-name">Your Name:</label>
+                    <input type="text" id="story-name" name="story-name" required>
+                    <span class="error-message" id="story-name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="pet-name">Pet's Name:</label>
+                    <input type="text" id="pet-name" name="pet-name" required>
+                    <span class="error-message" id="pet-name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="adoption-date">Adoption Date (approximate):</label>
+                    <input type="date" id="adoption-date" name="adoption-date" required>
+                    <span class="error-message" id="adoption-date-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="your-story">Your Story:</label>
+                    <textarea id="your-story" name="your-story" rows="5" required></textarea>
+                    <span class="error-message" id="your-story-error"></span>
+                </div>
+                <button type="submit" class="cta-button">Submit Your Story</button>
+            </form>
+            <div id="story-success" class="hidden">Thank you for sharing your story! We'll review it and may feature it on our website.</div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Fur and Adoptions</h3>
+                <p>123 Rescue Lane<br>Anytown, ST 12345<br>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 10am - 6pm<br>Saturday: 10am - 5pm<br>Sunday: 12pm - 4pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pets.html">Available Pets</a></li>
+                    <li><a href="stories.html">Success Stories</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Fur and Adoptions | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

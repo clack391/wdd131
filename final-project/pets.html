@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse available pets at Fur and Adoptions. Find dogs, cats, and other animals looking for their forever homes.">
+    <title>Available Pets | Fur and Adoptions</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Fur and Adoptions Logo" width="80" height="80">
+            <h1>Fur and Adoptions</h1>
+        </div>
+        <nav>
+            <button id="hamburger-menu" type="button" aria-label="Toggle navigation menu">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html" class="active">Available Pets</a></li>
+                <li><a href="stories.html">Success Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Available Pets</h2>
+            <p>Meet our wonderful animals waiting for their forever homes.</p>
+        </section>
+
+        <section class="pet-filters">
+            <h3>Filter Pets</h3>
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="pet-type">Pet Type:</label>
+                    <select id="pet-type">
+                        <option value="all">All Pets</option>
+                        <option value="dog">Dogs</option>
+                        <option value="cat">Cats</option>
+                        <option value="other">Other Animals</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="pet-age">Age:</label>
+                    <select id="pet-age">
+                        <option value="all">Any Age</option>
+                        <option value="baby">Baby (0-1 year)</option>
+                        <option value="young">Young (1-3 years)</option>
+                        <option value="adult">Adult (3-8 years)</option>
+                        <option value="senior">Senior (8+ years)</option>
+                    </select>
+                </div>
+                <button id="filter-button" class="secondary-button" type="button">Apply Filters</button>
+            </div>
+            <div id="favorites-container">
+                <button id="view-favorites" class="secondary-button" type="button">View My Favorites (<span id="favorites-count">0</span>)</button>
+            </div>
+        </section>
+
+        <section class="pet-listings">
+            <div id="pets-container" class="pet-cards">
+                <!-- Pet cards will be loaded from JavaScript -->
+            </div>
+            <div id="no-pets-message" class="hidden">
+                <p>No pets match your current filters. Please try different criteria.</p>
+            </div>
+        </section>
+
+        <section class="adoption-info">
+            <h3>Ready to Adopt?</h3>
+            <p>Our adoption fee includes spay/neuter, vaccinations, microchipping, and a veterinary check-up.</p>
+            <p>To start the adoption process, visit us during open hours or contact us to schedule an appointment.</p>
+            <a href="#contact-section" class="cta-button">Contact Us</a>
+        </section>
+
+        <section id="contact-section" class="contact-form">
+            <h2>Adoption Inquiry</h2>
+            <p>Interested in adopting? Let us know which pet you're interested in!</p>
+            <form id="adoption-form">
+                <div class="form-group">
+                    <label for="inquiry-name">Name:</label>
+                    <input type="text" id="inquiry-name" name="inquiry-name" required>
+                    <span class="error-message" id="inquiry-name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="inquiry-email">Email:</label>
+                    <input type="email" id="inquiry-email" name="inquiry-email" required>
+                    <span class="error-message" id="inquiry-email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="pet-interest">Pet(s) of Interest:</label>
+                    <input type="text" id="pet-interest" name="pet-interest" required>
+                    <span class="error-message" id="pet-interest-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="inquiry-message">Additional Information:</label>
+                    <textarea id="inquiry-message" name="inquiry-message" rows="4" required></textarea>
+                    <span class="error-message" id="inquiry-message-error"></span>
+                </div>
+                <button type="submit" class="cta-button">Submit Inquiry</button>
+            </form>
+            <div id="inquiry-success" class="hidden">Thank you for your interest! We'll contact you soon about the next steps in the adoption process.</div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Fur and Adoptions</h3>
+                <p>123 Rescue Lane<br>Anytown, ST 12345<br>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 10am - 6pm<br>Saturday: 10am - 5pm<br>Sunday: 12pm - 4pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pets.html">Available Pets</a></li>
+                    <li><a href="stories.html">Success Stories</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Fur and Adoptions | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
